@@ -1,0 +1,233 @@
+object Form1: TForm1
+  Left = 311
+  Height = 300
+  Top = 119
+  Width = 641
+  Caption = 'Send Email'
+  ClientHeight = 300
+  ClientWidth = 641
+  Position = poScreenCenter
+  LCLVersion = '3.2.0.0'
+  object Button1: TButton
+    Left = 536
+    Height = 25
+    Top = 264
+    Width = 75
+    Anchors = [akRight, akBottom]
+    Caption = 'Send email'
+    TabOrder = 7
+    OnClick = Button1Click
+  end
+  object edCC: TEdit
+    Left = 396
+    Height = 23
+    Top = 32
+    Width = 217
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 2
+  end
+  object fnAttachment: TFileNameEdit
+    Left = 392
+    Height = 23
+    Top = 232
+    Width = 220
+    FileName = 'D:\FLC2.XLSX'
+    FilterIndex = 0
+    HideDirectories = False
+    ButtonWidth = 23
+    NumGlyphs = 1
+    Anchors = [akLeft, akRight, akBottom]
+    MaxLength = 0
+    TabOrder = 6
+    Text = 'D:\FLC2.XLSX'
+  end
+  object Label1: TLabel
+    Left = 320
+    Height = 15
+    Top = 236
+    Width = 63
+    Anchors = [akLeft, akBottom]
+    Caption = 'Attachment'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 320
+    Height = 15
+    Top = 104
+    Width = 39
+    Caption = 'Subject'
+    ParentColor = False
+  end
+  object edSubject: TEdit
+    Left = 392
+    Height = 23
+    Top = 96
+    Width = 220
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 4
+    Text = 'TEST from FP'
+  end
+  object Label3: TLabel
+    Left = 319
+    Height = 15
+    Top = 40
+    Width = 16
+    Caption = 'CC'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 319
+    Height = 15
+    Top = 66
+    Width = 23
+    Caption = 'BCC'
+    ParentColor = False
+  end
+  object edBCC: TEdit
+    Left = 396
+    Height = 23
+    Top = 56
+    Width = 216
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 3
+  end
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 216
+    Top = 8
+    Width = 288
+    Caption = 'Sending settings'
+    ClientHeight = 196
+    ClientWidth = 284
+    TabOrder = 0
+    object edServer: TEdit
+      Left = 85
+      Height = 23
+      Top = 32
+      Width = 184
+      TabOrder = 1
+    end
+    object Label5: TLabel
+      Left = 8
+      Height = 15
+      Top = 36
+      Width = 65
+      Caption = 'SMTP Server'
+      ParentColor = False
+    end
+    object Label6: TLabel
+      Left = 8
+      Height = 15
+      Top = 59
+      Width = 57
+      Caption = 'Server Port'
+      ParentColor = False
+    end
+    object sePort: TSpinEdit
+      Left = 85
+      Height = 23
+      Top = 54
+      Width = 50
+      MaxValue = 600
+      MinValue = 1
+      TabOrder = 2
+      Value = 25
+    end
+    object cbSsl: TCheckBox
+      Left = 8
+      Height = 19
+      Top = 84
+      Width = 36
+      Caption = 'SSL'
+      TabOrder = 3
+    end
+    object cbAuthenticate: TCheckBox
+      Left = 85
+      Height = 19
+      Top = 84
+      Width = 86
+      Caption = 'Authenticate'
+      TabOrder = 4
+    end
+    object edUsername: TEdit
+      Left = 85
+      Height = 23
+      Top = 108
+      Width = 184
+      TabOrder = 5
+    end
+    object Label7: TLabel
+      Left = 8
+      Height = 15
+      Top = 112
+      Width = 53
+      Caption = 'Username'
+      ParentColor = False
+    end
+    object edPassword: TEdit
+      Left = 85
+      Height = 23
+      Top = 132
+      Width = 184
+      TabOrder = 6
+    end
+    object Label8: TLabel
+      Left = 8
+      Height = 15
+      Top = 140
+      Width = 50
+      Caption = 'Password'
+      ParentColor = False
+    end
+    object Label11: TLabel
+      Left = 8
+      Height = 15
+      Top = 14
+      Width = 36
+      Caption = 'Sender'
+      ParentColor = False
+    end
+    object edSender: TEdit
+      Left = 85
+      Height = 23
+      Top = 8
+      Width = 184
+      TabOrder = 0
+    end
+  end
+  object Label9: TLabel
+    Left = 320
+    Height = 15
+    Top = 16
+    Width = 12
+    Caption = 'To'
+    ParentColor = False
+  end
+  object edTo: TEdit
+    Left = 396
+    Height = 23
+    Top = 8
+    Width = 216
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 1
+  end
+  object Label10: TLabel
+    Left = 319
+    Height = 15
+    Top = 128
+    Width = 46
+    Caption = 'Message'
+    ParentColor = False
+  end
+  object Memo1: TMemo
+    Left = 396
+    Height = 96
+    Top = 128
+    Width = 216
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Lines.Strings = (
+      'Email sent from Free Pascal.'
+    )
+    TabOrder = 5
+  end
+end
